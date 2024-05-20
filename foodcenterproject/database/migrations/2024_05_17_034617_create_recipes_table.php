@@ -16,6 +16,7 @@ class CreateRecipesTable extends Migration
             $table->float('rating')->nullable();
             $table->integer('calories')->nullable();
             $table->string('region')->nullable();
+            $table->string('image')->nullable();  
             $table->foreignId('ingredient_id')->constrained('ingredients');
             $table->timestamps();
         });
