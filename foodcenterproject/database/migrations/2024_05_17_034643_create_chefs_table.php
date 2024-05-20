@@ -11,7 +11,7 @@ class CreateChefsTable extends Migration
         Schema::create('chefs', function (Blueprint $table) {
             $table->id();
             $table->string('certificate');
-            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

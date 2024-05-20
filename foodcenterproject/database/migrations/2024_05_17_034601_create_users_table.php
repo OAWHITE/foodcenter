@@ -13,7 +13,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('role')->nullable();
+            $table->enum('role', ['admin', 'chef', 'coach', 'user'])->default('user');
             $table->string('profile_image')->nullable();
             $table->text('allergies')->nullable();
             $table->float('height')->nullable();
