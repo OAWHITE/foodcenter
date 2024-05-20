@@ -3,10 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Recipe extends Model
 {
-    protected $fillable = ['name', 'description', 'calories', 'preparation_time'];
+    use HasFactory;
+
+    protected $fillable = ['title', 'description', 'instructions', 'rating', 'calories', 'region', 'ingredient_id'];
 
     public function ingredients()
     {

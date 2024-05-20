@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, HasFactory;
 
     protected $fillable = [
         'name', 'email', 'password', 'role', 'profile_image', 'allergies', 'height', 'weight',
@@ -29,5 +30,15 @@ class User extends Authenticatable
     public function chef()
     {
         return $this->hasOne(Chef::class);
+    }
+
+    public function recipes()
+    {
+        return $this->belongsToMany(Recipe::class, 'user_recipe');
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 }

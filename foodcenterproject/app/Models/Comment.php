@@ -3,10 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Comment extends Model
 {
-    protected $fillable = ['recipe_id', 'user_id', 'comment'];
+    use HasFactory;
+
+    protected $fillable = ['comment', 'user_id'];
 
     public function user()
     {
