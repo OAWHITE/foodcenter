@@ -1,0 +1,60 @@
+.Nav-bar {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.Logo {
+    display: flex;
+    margin: 15px 15px 15px 0px;
+    padding: 9px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.Nav-items {
+    display: flex;
+    margin: 15px;
+    padding: 20px;
+}
+
+.Nav-item {
+    margin: 0px 17px;
+    text-decoration: none;
+    color: black;
+}
+
+.Nav-item.active {
+    color: orange;
+    position: relative;
+}
+
+.Nav-item.active::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.language-select {
+    display: flex;
+    width: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
+}
+
+.language {
+    padding: 0px 2px 2px 2px;
+}
+
+i {
+    padding: 3px;
+}

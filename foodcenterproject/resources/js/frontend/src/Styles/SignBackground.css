@@ -1,0 +1,100 @@
+body {
+    overflow: hidden;
+}
+
+.top-left {
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    z-index: -1;
+}
+
+.top-right {
+    position: absolute;
+    right: -170px;
+    top: -20px;
+    z-index: -1;
+}
+
+.bottom-left {
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.bottom-right {
+    position: absolute;
+    right: -210px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+svg {
+    width: 65%;
+}
+
+.img-1 {
+    position: absolute;
+    top: 30px;
+    left: -150px;
+    height: 7%;
+}
+
+.img-2 {
+    position: absolute;
+    top: 80px;
+    left: 800px;
+    width: 70px;
+    height: 7%;
+}
+
+.img-3 {
+    position: absolute;
+    top: 200px;
+    left: -300px;
+    height: 6%;
+}
+
+.img-4 {
+    position: absolute;
+    bottom: 200px;
+    left: -100px;
+    height: 6%;
+}
+
+.img-5 {
+    position: absolute;
+    transform: rotate(150deg);
+    bottom: 100px;
+    right: 100px;
+    height: 6%;
+}
+
+.img-6 {
+    position: absolute;
+    top: 290px;
+    left: -170px;
+    height: 1%;
+}
+
+.main-container {
+    display: flex;
+    max-width: 938px;
+    flex-direction: column;
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
+
+.text-content {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.title {
+    height: 25px;
+}
+
+.description {
+    color: rgb(77, 77, 77);
+}
