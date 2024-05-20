@@ -18,11 +18,11 @@ export default function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/home" element={<Home />} />
-              <Route pathe="/best-meal" element={<BestMeals />}>Best meals</Route>
-              <Route pathe="/fitness" element={<Fitness />}>Fitness</Route>
-              <Route pathe="/fridge" element={<MyFridge />}>My Fridge</Route>
-              <Route pathe="/celebrities-fav" element={<CelebritiesFav />}>Celebrities Favorite</Route>
-              <Route pathe="/about-us" element={<AboutUs />}>About us</Route>
+              <Route path="/best-meal" element={<BestMeals />}>Best meals</Route>
+              <Route path="/fitness" element={<Fitness />}>Fitness</Route>
+              <Route path="/fridge" element={<MyFridge />}>My Fridge</Route>
+              <Route path="/celebrities-fav" element={<CelebritiesFav />}>Celebrities Favorite</Route>
+              <Route path="/about-us" element={<AboutUs />}>About us</Route>
           </Routes>
       </Router>
   );
