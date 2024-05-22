@@ -9,6 +9,8 @@ import Fitness from "./Fitness";
 import MyFridge from "./MyFridge";
 import CelebritiesFav from "./CelebritiesFav";
 import AboutUs from "./AboutUs";
+import Recettes from "./Recettes";
+import Recette from "./Recette";
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
               <Route path="/fridge" element={<MyFridge />}>My Fridge</Route>
               <Route path="/celebrities-fav" element={<CelebritiesFav />}>Celebrities Favorite</Route>
               <Route path="/about-us" element={<AboutUs />}>About us</Route>
+              <Route path="/recettes" element={<Recettes />}>About us</Route>
+              <Route path="/recette" element={<Recette />}>About us</Route>
           </Routes>
       </Router>
   );
