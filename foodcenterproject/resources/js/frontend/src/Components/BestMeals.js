@@ -6,6 +6,12 @@ import Guide from "./Guide";
 import Footer from "./Footer";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import TopLeft from "./Decoration/top-left";
+import TopRight from "./Decoration/top-right";
+import MiddleLeft from "./Decoration/middle-left";
+import MiddleRight from "./Decoration/middle-right";
+import BottomLeft from "./Decoration/bottom-left";
+import BottomRight from "./Decoration/bottom-right";
 
 const favorites = [
     { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/4750ed5c49da6e2ea4248c60761a33086bd7e130def86f282b3b40740174d937?apiKey=e15653f4f4ba4d0f8f02d4f65a81a2f4&", alt: "Bolognese Image", text: "Bolognese", calories: 297, country: "Italian", countryCode : "it"},
@@ -55,6 +61,12 @@ export default function Home() {
 
     return (
         <>
+        <TopLeft className="absolute z-[-1] top-[0] left-[0] w-[29%] h-[30%]" fill="#00BFFF"/>
+        <TopRight className="absolute z-[-1] top-[0] right-[0] w-[29%] h-[40%]" fill="#00BFFF"/>
+        <MiddleLeft className="absolute z-[-1] top-[87%] left-[-45%] w-[100%] h-[50%]" fill="#00BFFF"/>
+        <MiddleRight className="absolute z-[-1] bottom-[-55%] right-[0%] w-[10%] h-[40%]" fill="#00BFFF"/>
+        <BottomLeft className="absolute z-[-1] bottom-[-280%] left-[0%] w-[10%] h-[70%]" fill="#00BFFF"/>
+        <BottomRight className="absolute z-[-1] bottom-[-325%] right-[0%] w-[40%] h-[70%]" fill="#00BFFF"/>
         <main className="main-content">
             <section className="search-section">
             <form className="flex gap-5 max-md:flex-col max-md:gap-0" onSubmit={handleSubmit}>

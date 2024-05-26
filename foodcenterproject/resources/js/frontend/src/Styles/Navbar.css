@@ -2,13 +2,12 @@
     display: flex;
     margin: auto;
     width: 90%;
-    justify-content: space-between;
     font-family: 'Abril Fatface', sans-serif;
 }
 
 .Logo {
     display: flex;
-    margin: 15px 15px 15px 0px;
+    margin: 15px;
     padding: 9px;
     font-weight: 700;
     font-size: 30px;
@@ -16,8 +15,10 @@
 
 .Nav-items {
     display: flex;
-    margin: 15px;
+    margin-top: 20px;
+    margin-left: 7%;
     padding: 20px;
+    font-size: 14px;
 }
 
 .Nav-item {
@@ -44,15 +45,14 @@
 }
 
 .language-select {
+    padding: 5px;
     display: flex;
-    width: fit-content;
-    border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
 }
 
 .language {
-    padding: 0px 2px 2px 2px;
+    padding: 2px;
 }
 
 i {
