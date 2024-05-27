@@ -1,10 +1,16 @@
-import * as React from "react";
+import React from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Guide from "./Guide";
 import Footer from "./Footer";
 import "../Styles/Home.css";
 import { useNavigate } from "react-router";
+import TopLeft from "./Decoration/top-left";
+import TopRight from "./Decoration/top-right";
+import MiddleLeft from "./Decoration/middle-left";
+import MiddleRight from "./Decoration/middle-right";
+import BottomLeft from "./Decoration/bottom-left";
+import BottomRight from "./Decoration/bottom-right";
 
 const features = [
   { icon: "https://cdn.builder.io/api/v1/image/assets/TEMP/0cc5496449d5ae7e8c2f833ad43bfb76fa88d157493b2155c0202e0b01edcd96?apiKey=f433cc271dd0471da0d67c71e9af784c&", title: "High Quality Meals" },
@@ -36,7 +42,13 @@ export default function Home() {
 
   return (
     <>
-      <main className="main-content">
+      <TopLeft className="absolute z-[-1] top-[0] left-[0] w-[29%] h-[30%]" fill="#4EABBF"/>
+      <TopRight className="absolute z-[-1] top-[0] right-[0] w-[29%] h-[40%]" fill="#4EABBF"/>
+      <MiddleLeft className="absolute z-[-1] top-[87%] left-[-45%] w-[100%] h-[50%]" fill="#4EABBF"/>
+      <MiddleRight className="absolute z-[-1] bottom-[-55%] right-[0%] w-[10%] h-[40%]" fill="#4EABBF"/>
+      <BottomLeft className="absolute z-[-1] bottom-[-280%] left-[0%] w-[10%] h-[70%]" fill="#4EABBF"/>
+      <BottomRight className="absolute z-[-1] bottom-[-325%] right-[0%] w-[40%] h-[70%]" fill="#4EABBF"/>
+      <main className="main-content mt-24">
         <div className="hero">
           <div className="hero-content">
             <div className="hero-text">
@@ -129,9 +141,6 @@ export default function Home() {
         <Guide />
         <Footer />
       </main>
-        {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/95187fc5bfdec07615f6bf49d8128bbdcb41d80229de48525bf2de25f0c47991?apiKey=e15653f4f4ba4d0f8f02d4f65a81a2f4&" alt="" className="aspect-[0.34] fill-teal-400 w-[219px] background" /> */}
-        {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a61ea7521ab66ff303bbb32e01183e038729cbe73f024754aad83cb39465737e?apiKey=e15653f4f4ba4d0f8f02d4f65a81a2f4&" alt="" className="aspect-[0.4] fill-teal-400 w-[210px]" background" /> */}
-        {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2990b538328b94c8a6268a02c86291390e604746866d67b9230de13f65ff672c?apiKey=e15653f4f4ba4d0f8f02d4f65a81a2f4&" alt="" className="aspect-[0.23] fill-teal-400 background" /> */}
     </>
   );
 }
