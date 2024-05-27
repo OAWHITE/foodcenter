@@ -13,6 +13,7 @@ class Recipe extends Model
         'title', 'description', 'instructions', 'rating', 'calories', 'region', 'image', 'ingredient_id',
     ];
 
+    // Define the relationships
     public function ingredients()
     {
         return $this->belongsToMany(Ingredient::class, 'recipe_ingredient');
