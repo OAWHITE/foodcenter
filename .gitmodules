@@ -1,0 +1,3 @@
+[submodule "foodcenter"]
+	path = foodcenter
+	url = https://github.com/OAWHITE/foodcenter.git

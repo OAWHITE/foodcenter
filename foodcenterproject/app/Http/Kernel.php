@@ -40,6 +40,8 @@ class Kernel extends HttpKernel
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
+        'jwt.verify' => \App\Http\Middleware\JWTMiddleware::class,
+
     ];
     
 
