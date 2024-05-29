@@ -45,14 +45,11 @@
 }
 
 .language-select {
-    padding: 5px;
     display: flex;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.5);
 }
 
 .language {
-    padding: 2px;
+    padding-right: 2px;
 }
 
 i {

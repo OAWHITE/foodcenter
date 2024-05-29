@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
         <section className="search-section">
-          <form className="flex gap-5 max-md:flex-col max-md:gap-0" onSubmit={handleSubmit}>
+          <form className="flex gap-5 max-md:flex-col max-md:gap-0 pb-5" onSubmit={handleSubmit}>
             <div className="flex flex-col w-full">
               <label className="text-lg font-medium"> Region </label>
               <input className="justify-center p-4 mt-4 rounded-2xl border border-solid border-zinc-200" placeholder="Morocco" />
@@ -98,7 +98,7 @@ export default function Home() {
                 <option value="4">4 Persons</option>
               </select>
             </div>
-            <button type="submit" className="flex justify-center p-2 mt-12 mb-auto w-full text-xl font-medium text-black bg-amber-500 rounded-2xl max-md:px-5 max-md:mt-10" aria-label="Search" > Search </button>
+            <button type="submit" className="flex justify-center p-2 mt-12 w-full text-xl font-medium text-black bg-amber-500 rounded-2xl max-md:px-5 max-md:mt-10" aria-label="Search" > Search </button>
           </form>
         </section>
         <div className="flex flex-col pt-11 pb-5">
