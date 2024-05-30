@@ -29,9 +29,9 @@ export default function MyFridge() {
         <TopLeft className="absolute z-[-1] top-[0] left-[0] w-[29%] h-[30%]" fill="#5CCB93"/>
         <TopRight className="absolute z-[-1] top-[0] right-[0] w-[29%] h-[40%]" fill="#5CCB93"/>
         <MiddleLeft className="absolute z-[-1] top-[87%] left-[-45%] w-[100%] h-[50%]" fill="#5CCB93"/>
-        <MiddleRight className="absolute z-[-1] bottom-[-55%] right-[0%] w-[10%] h-[40%]" fill="#5CCB93"/>
-        {/* <BottomLeft className="absolute z-[-1] bottom-[-220%] left-[0%] w-[10%] h-[70%]" fill="#5CCB93"/> */}
-        {/* <BottomRight className="absolute z-[-1] bottom-[-290%] right-[0%] w-[40%] h-[70%]" fill="#5CCB93"/> */}
+        <MiddleRight className="absolute z-[-1] bottom-[-30%] right-[0%] w-[10%] h-[40%]" fill="#5CCB93"/>
+        <BottomLeft className="absolute z-[-1] bottom-[-120%] left-[0%] w-[10%] h-[70%]" fill="#5CCB93"/>
+        <BottomRight className="absolute z-[-1] bottom-[-145%] right-[0%] w-[40%] h-[70%]" fill="#5CCB93"/>
         <section className="search-section">
             <form className="flex gap-5 max-md:flex-col max-md:gap-0 pb-5" onSubmit={handleSubmit}>
                 <div className="flex flex-col w-full">

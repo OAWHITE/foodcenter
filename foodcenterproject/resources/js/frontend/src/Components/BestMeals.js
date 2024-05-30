@@ -45,15 +45,14 @@ const responsive = {
 };
 
 export default function Home() {
+    // const response = await fetch(`https://api.api-ninjas.com/v1/recipe?query=${query}`, {
 
     const [query, setQuery] = useState('');
     const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const response = await fetch(`https://api.api-ninjas.com/v1/recipe?query=${query}`, {
-            headers: { 'X-Api-Key': 'Qr5QgnTWF7pCysiXAFHBNw==bPteVwm6iguFI6LI' },
-        });
+        const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=4905c962a9844760a60cf260e9b977a8&query=${query}`);
         const data = await response.json();
         navigate('/recettes', { state: { recipes: data } });
     };
@@ -91,7 +90,7 @@ export default function Home() {
                 <div className="flex flex-col w-full text-3xl text-teal-400 max-md:pl-5 max-md:max-w-full">
                     <Carousel responsive={responsive}>
                         {favorites.map((item, index) => (
-                            <div key={index} className="flex flex-col flex-1 self-start mt-2 bg-gray-100 shadow-lg m-3">
+                            <div key={index} className="flex flex-col flex-1 self-start mt-2 bg-gray-100 shadow-lg m-3 rounded-3xl">
                                 <img loading="lazy" src={item.src} alt={item.alt} className="w-full aspect-[1.47] p-5"/>
                                 <div className="self-start ml-12 max-md:ml-2.5">{item.text}</div>
                                 <div className="relative self-start mt-9 ml-12 text-4xl font-bold text-black max-md:ml-2.5"> Calories : {item.calories} </div>
@@ -144,9 +143,6 @@ export default function Home() {
             <Guide />
             <Footer />
         </main>
-            {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/95187fc5bfdec07615f6bf49d8128bbdcb41d80229de48525bf2de25f0c47991?apiKey=e15653f4f4ba4d0f8f02d4f65a81a2f4&" alt="" className="aspect-[0.34] fill-teal-400 w-[219px] background" /> */}
-            {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a61ea7521ab66ff303bbb32e01183e038729cbe73f024754aad83cb39465737e?apiKey=e15653f4f4ba4d0f8f02d4f65a81a2f4&" alt="" className="aspect-[0.4] fill-teal-400 w-[210px]" background" /> */}
-            {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2990b538328b94c8a6268a02c86291390e604746866d67b9230de13f65ff672c?apiKey=e15653f4f4ba4d0f8f02d4f65a81a2f4&" alt="" className="aspect-[0.23] fill-teal-400 background" /> */}
         </>
     );
 }

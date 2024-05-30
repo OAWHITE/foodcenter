@@ -12,10 +12,9 @@ import AboutUs from "./AboutUs";
 import Recettes from "./Recettes";
 import Recette from "./Recette";
 
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
-
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 export default function App() {
   return (
       <Router>
